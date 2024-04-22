@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">VetSync App</string>
+    <string name="logoDescription">Logo de VetSync App</string>
+
+    <!--Login Screen-->
+    <string name="btnLogin">Login</string>
+    <string name="passwordMsg">Contraseña</string>
+    <string name="emailMsg">Email</string>
+    <string name="msgLoginTitle">Bienvenido</string>
+    <string name="msgLoginSubTitle">Es momento de iniciar sesión</string>
+
+
 </resources>
