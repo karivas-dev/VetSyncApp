@@ -8,6 +8,7 @@
     <string name="emailMsg">Email</string>
     <string name="msgLoginTitle">Bienvenido</string>
     <string name="msgLoginSubTitle">Es momento de iniciar sesión</string>
+    <string name="msgRegisterSubTitle">Es momento de crear tu cuenta</string>
 
 
 </resources>
