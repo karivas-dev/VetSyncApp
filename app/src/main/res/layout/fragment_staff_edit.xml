@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <TextView
+        android:id="@+id/editStaffTitle"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msgEditStaffTitle"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/editStaffSubTitle"
+        style="@style/h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msgEditStaffSubTitle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/editStaffTitle" />
+
+    <TextView
+        android:id="@+id/labelNameStaff"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/name_txt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/editStaffSubTitle"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputNameStaff"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:hint="@string/name_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelNameStaff"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelPhoneStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_txt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputNameStaff"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputPhoneStaff"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="phone"
+        android:hint="@string/phone_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelPhoneStaff"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelTypeStaff"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/member_type_txt"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputPhoneStaff"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <Spinner
+        android:id="@+id/spinner_memberType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        app:layout_constraintTop_toBottomOf="@id/labelTypeStaff"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="40dp"
+        android:text="@string/btnLogin"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/primaryButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
