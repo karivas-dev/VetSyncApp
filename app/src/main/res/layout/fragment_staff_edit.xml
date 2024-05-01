@@ -112,13 +112,26 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDeleteStaff"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="40dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/btnDelete"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/secondaryButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaveStaff"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
         android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
         android:text="@string/btnSave"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintStart_toEndOf="@id/btnDeleteStaff"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
         style="@style/primaryButton" />
 

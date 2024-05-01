@@ -27,4 +27,27 @@
         <item>Secretaria</item>
         <item>Auxiliar</item>
     </string-array>
+
+    <!--Home staff screen-->
+    <string name="msgHomeStaffTitle">Staff</string>
+    <string name="msgHomeStaffSubTitle">Listado de los miembros del staff registrados</string>
+    <string name="plus">+</string>
+    <string name="staffName">Josías Alvarenga</string>
+    <string name="staffType">Doctor</string>
+    <string name="staffNumber">5069 6872</string>
+    <string name="staff_member_picture">Staff member picture</string>
+    <string name="btnDelete">Eliminar datos</string>
+
+    <!--Add/edit patient screen-->
+    <string name="msgEditPetTitle">Registrar paciente</string>
+    <string name="msgPetStaffSubTitle">Completa los campos para registrar un nuevo paciente</string>
+    <string name="name_pet_txt_example">Juanito Pelusa</string>
+    <string name="name_pet_txt">Nombre</string>
+    <string name="owner_txt">Dueño del paciente (Familia)</string>
+    <string name="age_txt">Edad (meses)</string>
+    <string name="weight_txt">Peso (libras)</string>
+    <string name="weight_txt_example">12.6</string>
+    <string name="age_txt_example">26</string>
+    <string name="diagnosis_pet_txt">Diagnóstico</string>
+
 </resources>
