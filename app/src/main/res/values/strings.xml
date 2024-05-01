@@ -61,4 +61,30 @@
     <string name="msgHomePatientSubTitle">Listado de los pacientes registrados en la veterinaria</string>
     <string name="id_pet_txt_example">362</string>
 
+    <!--Home appointment screen-->
+    <string name="date_txt">Fecha</string>
+    <string name="status_appointment_txt_example">Próximo</string>
+    <string name="status_appointment_txt">Estado</string>
+    <string name="hour_txt_example">15:30</string>
+    <string name="hour_txt">Hora</string>
+    <string name="fecha_txt">Fecha</string>
+    <string name="appointment_details_txt">Notas de la cita</string>
+    <string name="contact_txt">Información de contacto</string>
+    <string name="date_txt_example">Lun. 20 mayo 2024</string>
+    <string name="msgHistoryPatientTitle">Historial de citas</string>
+    <string name="msgHistoryAppointmentSubTitle">Listado de citas agendadas</string>
+
+    <!--Add/edit appointment screen-->
+    <string name="msgEditAppointmentTitle">Agendar cita</string>
+    <string name="msgAppointmentSubTitle">Completa los campos para agendar una cita</string>
+    <string name="patient_pet_txt">Ingresa el id o nombre del paciente</string>
+    <string name="appointment_contact_txt">Información de contacto</string>
+    <string name="appointment_status_txt">Estado de la cita</string>
+
+    <string-array name="statuses">
+        <item>Agendada</item>
+        <item>Completada</item>
+        <item>Cancelada</item>
+    </string-array>
+
 </resources>
