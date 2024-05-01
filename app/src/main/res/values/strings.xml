@@ -87,4 +87,11 @@
         <item>Cancelada</item>
     </string-array>
 
+
+    <string name="logout">Cerrar sesión</string>
+    <string name="msgHomeProfileTitle">Perfil</string>
+    <string name="msgHomeProfileSubTitle">Puedes editar tus datos principales de inicio de sesión</string>
+    <string name="email_txt_example">example@example.com</string>
+    <string name="password_txt_example">password</string>
+    <string name="confirm_password_txt">Confirmar contraseña</string>
 </resources>
