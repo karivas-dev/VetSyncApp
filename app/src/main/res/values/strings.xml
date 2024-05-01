@@ -9,13 +9,18 @@
     <string name="msgLoginTitle">Bienvenido</string>
     <string name="msgLoginSubTitle">Es momento de iniciar sesión</string>
     <string name="msgRegisterSubTitle">Es momento de crear tu cuenta</string>
+    <string name="login_register_text">¿No tienes una cuenta? ¡Registrate!</string>
+
+    <!--Add/edit staff screen-->
     <string name="msgEditStaffTitle">Agregar staff</string>
-    <string name="msgEditStaffSubTitle">Incluye todos los datos para completar el registro</string>
+    <string name="msgEditStaffSubTitle">Incluye todos los datos para completar el registro del nuevo miembro</string>
     <string name="name_txt">Nombre completo</string>
     <string name="name_txt_example">Alfonso Cotto</string>
     <string name="phone_txt">Número de contacto</string>
     <string name="phone_txt_example">7065 9845</string>
     <string name="member_type_txt">Cargo dentro del staff</string>
+    <string name="staff_member_image">Staff member image</string>
+    <string name="btnSave">Guardar datos</string>
 
     <string-array name="member_types">
         <item>Doctor</item>
