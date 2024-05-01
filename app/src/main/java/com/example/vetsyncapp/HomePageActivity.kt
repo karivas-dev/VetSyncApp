@@ -11,6 +11,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -22,22 +23,6 @@ class HomePageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_home)
 
-        btnLogout = findViewById<AppCompatButton>(R.id.btnLogout)
-        btnLogout.setOnClickListener {
-            logout()
-        }
-
+        val navController = findNavController(R.id.mainHostFragment)
     }
-
-    private fun logout(){
-        FirebaseAuth.getInstance().signOut().also{
-            Toast.makeText(this, "Sesión cerrada", Toast.LENGTH_SHORT).show()
-
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-    }
-
 }
