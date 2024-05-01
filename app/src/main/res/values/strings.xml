@@ -41,7 +41,7 @@
     <!--Add/edit patient screen-->
     <string name="msgEditPetTitle">Registrar paciente</string>
     <string name="msgPetStaffSubTitle">Completa los campos para registrar un nuevo paciente</string>
-    <string name="name_pet_txt_example">Juanito Pelusa</string>
+    <string name="name_pet_txt_example">Juanito Pelusa Duque</string>
     <string name="name_pet_txt">Nombre</string>
     <string name="owner_txt">Dueño del paciente (Familia)</string>
     <string name="age_txt">Edad (meses)</string>
@@ -49,5 +49,9 @@
     <string name="weight_txt_example">12.6</string>
     <string name="age_txt_example">26</string>
     <string name="diagnosis_pet_txt">Diagnóstico</string>
+    <string name="owner_txt_example">Rafael Duque</string>
+    <string name="breed_pet_txt">Raza</string>
+    <string name="breed_pet_txt_example">Aguacatero (Mixto)</string>
+    <string name="diagnosis_pet_txt_example">Pulgas y garrapatas\nAlérgia a colorantes en comida</string>
 
 </resources>

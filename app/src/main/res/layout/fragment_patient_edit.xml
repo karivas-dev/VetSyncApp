@@ -82,7 +82,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginBottom="15dp"
         android:inputType="text"
-        android:hint="@string/phone_txt_example"
+        android:hint="@string/owner_txt_example"
         app:layout_constraintTop_toBottomOf="@id/labelOwnerPet"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
@@ -139,13 +139,38 @@
         style="@style/txtInputSecondary" />
 
     <TextView
+        android:id="@+id/labelBreedPet"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/breed_pet_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputAgePet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputBreedPet"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:hint="@string/breed_pet_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelBreedPet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
         android:id="@+id/labelDiagnosisPet"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:text="@string/diagnosis_pet_txt"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
-        app:layout_constraintTop_toBottomOf="@id/inputAgePet"
+        app:layout_constraintTop_toBottomOf="@id/inputBreedPet"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
         style="@style/h1" />
@@ -156,7 +181,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginBottom="15dp"
         android:inputType="text"
-        android:hint="@string/name_pet_txt_example"
+        android:hint="@string/diagnosis_pet_txt_example"
         app:layout_constraintTop_toBottomOf="@id/labelDiagnosisPet"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
@@ -167,24 +192,24 @@
         android:id="@+id/btnDeleteStaff"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:paddingStart="25dp"
         android:paddingEnd="25dp"
         android:text="@string/btnDelete"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintTop_toBottomOf="@+id/inputDiagnosisPet"
         style="@style/secondaryButton" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSaveStaff"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:layout_marginStart="15dp"
         android:text="@string/btnSave"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
         app:layout_constraintStart_toEndOf="@id/btnDeleteStaff"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintTop_toBottomOf="@+id/inputDiagnosisPet"
         style="@style/primaryButton" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -199,7 +224,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.98" />
+        app:layout_constraintGuide_percent="0.97" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineLeft"
