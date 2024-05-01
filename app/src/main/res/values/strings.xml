@@ -47,11 +47,18 @@
     <string name="age_txt">Edad (meses)</string>
     <string name="weight_txt">Peso (libras)</string>
     <string name="weight_txt_example">12.6</string>
-    <string name="age_txt_example">26</string>
+    <string name="age_txt_example">29</string>
     <string name="diagnosis_pet_txt">Diagnóstico</string>
     <string name="owner_txt_example">Rafael Duque</string>
     <string name="breed_pet_txt">Raza</string>
     <string name="breed_pet_txt_example">Aguacatero (Mixto)</string>
-    <string name="diagnosis_pet_txt_example">Pulgas y garrapatas\nAlérgia a colorantes en comida</string>
+    <string name="diagnosis_pet_txt_example">Pulgas y garrapatas\nAlergia a colorantes en comida</string>
+    <string name="phone_pet_txt">Número de contacto</string>
+    <string name="phone_pet_txt_example">6049 8523</string>
+
+    <!--Home patient screen-->
+    <string name="msgHomePatientTitle">Pacientes</string>
+    <string name="msgHomePatientSubTitle">Listado de los pacientes registrados en la veterinaria</string>
+    <string name="id_pet_txt_example">362</string>
 
 </resources>

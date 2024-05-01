@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="25sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_50"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp">
+
+        <ImageView
+            android:id="@+id/petImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/staff_member_picture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleType="centerInside"
+            android:src="@color/white"/>
+
+        <TextView
+            android:id="@+id/petName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/name_pet_txt_example"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/petImage"
+            app:layout_constraintTop_toTopOf="@id/petImage"/>
+
+        <TextView
+            android:id="@+id/petId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/id_pet_txt_example"
+            android:textColor="@color/white"
+            android:background="@color/primary"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/petImage"/>
+
+        <TextView
+            android:id="@+id/petBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/breed_pet_txt_example"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@id/petName"
+            app:layout_constraintTop_toBottomOf="@id/petName"/>
+
+        <TextView
+            android:id="@+id/petAgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/age_txt"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/petName"
+            app:layout_constraintTop_toBottomOf="@id/petBreed"/>
+
+        <TextView
+            android:id="@+id/petAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/age_txt_example"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/petAgeLabel"
+            app:layout_constraintTop_toBottomOf="@id/petBreed"/>
+
+        <TextView
+            android:id="@+id/petWeightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/weight_txt"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/petName"
+            app:layout_constraintTop_toBottomOf="@id/petAge"/>
+
+        <TextView
+            android:id="@+id/petWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/weight_txt_example"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/petAge"
+            app:layout_constraintTop_toTopOf="@id/petWeightLabel"/>
+
+        <TextView
+            android:id="@+id/petOwnerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/owner_txt"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/petImage"
+            app:layout_constraintTop_toBottomOf="@id/petWeight"/>
+
+        <TextView
+            android:id="@+id/petOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/owner_txt_example"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/petAge"
+            app:layout_constraintTop_toTopOf="@id/petOwnerLabel"/>
+
+        <TextView
+            android:id="@+id/petPhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/phone_pet_txt"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/petImage"
+            app:layout_constraintTop_toBottomOf="@id/petOwner"/>
+
+        <TextView
+            android:id="@+id/petPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/phone_pet_txt_example"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/petOwner"
+            app:layout_constraintTop_toTopOf="@id/petPhoneLabel"/>
+
+        <TextView
+            android:id="@+id/petDiagnosisLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/diagnosis_pet_txt"
+            android:textColor="@color/gray_600"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/petImage"
+            app:layout_constraintTop_toBottomOf="@id/petPhoneLabel"/>
+
+        <TextView
+            android:id="@+id/petDiagnosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/diagnosis_pet_txt_example"
+            android:textColor="@color/gray_600"
+            android:layout_marginStart="10dp"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/petDiagnosisLabel"
+            app:layout_constraintTop_toBottomOf="@id/petDiagnosisLabel"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
