@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+    <ImageView
+        android:id="@+id/editPetImage"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:contentDescription="@string/staff_member_image"
+        android:src="@drawable/pet"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"/>
+
+    <TextView
+        android:id="@+id/editPetTitle"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msgEditPetTitle"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/editPetImage"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/editPetSubTitle"
+        style="@style/h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/msgPetStaffSubTitle"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/editPetTitle" />
+
+    <TextView
+        android:id="@+id/labelNamePet"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/name_pet_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/editPetSubTitle"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputNamePet"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:hint="@string/name_pet_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelNamePet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelOwnerPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/owner_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputNamePet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputOwnerPet"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:hint="@string/phone_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelOwnerPet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelAgePet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/age_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputOwnerPet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputAgePet"
+        android:layout_width="0dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/age_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelAgePet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelWeightPet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/weight_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputOwnerPet"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputWeightPet"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/weight_txt_example"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintTop_toBottomOf="@id/labelWeightPet"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelDiagnosisPet"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/diagnosis_pet_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputAgePet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputDiagnosisPet"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="text"
+        android:hint="@string/name_pet_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelDiagnosisPet"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDeleteStaff"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="40dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/btnDelete"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/secondaryButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveStaff"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/btnSave"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/btnDeleteStaff"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/primaryButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
