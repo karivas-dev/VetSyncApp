@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
 
     }
 
-    /*override fun onStart() {
+    override fun onStart() {
         super.onStart()
         auth.addAuthStateListener(authStateListener)
     }
@@ -68,7 +68,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         auth.removeAuthStateListener(authStateListener)
-    }*/
+    }
 
     private fun goToRegister() {
         val intent = Intent(this, RegisterActivity::class.java)
@@ -79,7 +79,7 @@ class LoginActivity : AppCompatActivity() {
         authStateListener = FirebaseAuth.AuthStateListener { firebaseAuth ->
             val user = firebaseAuth.currentUser
             if (user != null) {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, HomePageActivity::class.java)
                 startActivity(intent)
             }
         }
