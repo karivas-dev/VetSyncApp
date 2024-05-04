@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     android:fillViewport="true">
 
@@ -218,7 +219,7 @@
         style="@style/txtInputSecondary" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDeleteStaff"
+        android:id="@+id/btnDeletePatient"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
         android:layout_marginTop="35dp"
@@ -231,14 +232,14 @@
         style="@style/secondaryButton" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSaveStaff"
+        android:id="@+id/btnSavePatient"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
         android:layout_marginTop="35dp"
         android:layout_marginStart="15dp"
         android:text="@string/btnSave"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@id/btnDeleteStaff"
+        app:layout_constraintStart_toEndOf="@id/btnDeletePatient"
         app:layout_constraintTop_toBottomOf="@+id/inputDiagnosisPet"
         app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
         style="@style/primaryButton" />

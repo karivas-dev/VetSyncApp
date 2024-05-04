@@ -25,7 +25,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:scaleType="centerInside"
-            android:src="@color/white"/>
+            android:src="@drawable/pet"
+            />
 
         <TextView
             android:id="@+id/petName"
