@@ -1,15 +1,10 @@
-package com.example.vetsyncapp.hooks
+package com.example.vetsyncapp.controllers
 
-import android.util.Log
-import android.widget.Toast
 import com.example.vetsyncapp.models.Patient
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 
-class PatientHook {
+class PatientController {
 
     companion object {
         var db: FirebaseDatabase = FirebaseDatabase.getInstance()

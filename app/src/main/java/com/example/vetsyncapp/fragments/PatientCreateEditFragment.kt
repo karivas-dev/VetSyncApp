@@ -11,7 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import com.example.vetsyncapp.R
-import com.example.vetsyncapp.hooks.PatientHook
+import com.example.vetsyncapp.controllers.PatientController
 
 
 class PatientCreateEditFragment : Fragment(R.layout.fragment_patient_edit) {
@@ -70,7 +70,7 @@ class PatientCreateEditFragment : Fragment(R.layout.fragment_patient_edit) {
                     if(!formValidations()){
                         return@setOnClickListener
                     }
-                    PatientHook().store(name, breed, age.toInt(), weight.toDouble(), owner, ownerPhone, diagnosis)
+                    PatientController().store(name, breed, age.toInt(), weight.toDouble(), owner, ownerPhone, diagnosis)
                     Toast.makeText(context, "Paciente creado con exito !", Toast.LENGTH_SHORT).show()
                     requireActivity().supportFragmentManager.popBackStack()
                 }
@@ -78,7 +78,7 @@ class PatientCreateEditFragment : Fragment(R.layout.fragment_patient_edit) {
                     if(!formValidations()){
                         return@setOnClickListener
                     }
-                    PatientHook().update(id!!, name, breed, age.toInt(), weight.toDouble(), owner, ownerPhone, diagnosis)
+                    PatientController().update(id!!, name, breed, age.toInt(), weight.toDouble(), owner, ownerPhone, diagnosis)
                     Toast.makeText(context, "Paciente actualizado con exito !", Toast.LENGTH_SHORT).show()
                     requireActivity().supportFragmentManager.popBackStack()
                 }
@@ -110,7 +110,7 @@ class PatientCreateEditFragment : Fragment(R.layout.fragment_patient_edit) {
                 builder.setTitle("Eliminar Paciente")
                 builder.setMessage("¿Estas seguro de eliminar este paciente?")
                 builder.setPositiveButton("Si") { dialog, which ->
-                    PatientHook().delete(id!!)
+                    PatientController().delete(id!!)
                     Toast.makeText(context, "Paciente eliminado con exito !", Toast.LENGTH_SHORT).show()
                     requireActivity().supportFragmentManager.popBackStack()
                 }
