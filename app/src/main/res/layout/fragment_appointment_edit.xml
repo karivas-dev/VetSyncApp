@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     android:fillViewport="true">
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -56,18 +57,16 @@
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
         style="@style/h1" />
 
-    <EditText
-        android:id="@+id/inputNamePet"
+
+    <Spinner
+        android:id="@+id/spinner_patients"
         android:layout_width="0dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="15dp"
-        android:inputType="text"
-        android:hint="@string/id_pet_txt_example"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
         app:layout_constraintTop_toBottomOf="@id/labelPatientPet"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        android:autofillHints=""
-        style="@style/txtInputSecondary" />
+        />
 
 
     <TextView
@@ -77,7 +76,7 @@
         android:text="@string/appointment_status_txt"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_bold"
-        app:layout_constraintTop_toBottomOf="@id/inputNamePet"
+        app:layout_constraintTop_toBottomOf="@id/spinner_patients"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
         style="@style/h1" />
@@ -140,52 +139,16 @@
         android:autofillHints=""
         style="@style/txtInputSecondary" />
 
-    <TextView
-        android:id="@+id/labelAppointmentContact"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:text="@string/appointment_contact_txt"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/poppins_bold"
-        app:layout_constraintTop_toBottomOf="@id/inputAppointmentDate"
-        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
-        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        style="@style/h1" />
 
-    <EditText
-        android:id="@+id/inputAppointmentContactName"
-        android:layout_width="0dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="15dp"
-        android:inputType="text"
-        android:hint="@string/name_txt_example"
-        app:layout_constraintTop_toBottomOf="@id/labelAppointmentContact"
-        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
-        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        android:autofillHints=""
-        style="@style/txtInputSecondary" />
-
-    <EditText
-        android:id="@+id/inputAppointmentContactPhone"
-        android:layout_width="0dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="15dp"
-        android:inputType="phone"
-        android:hint="@string/phone_txt_example"
-        app:layout_constraintTop_toBottomOf="@id/inputAppointmentContactName"
-        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
-        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        android:autofillHints=""
-        style="@style/txtInputSecondary" />
 
     <TextView
         android:id="@+id/labelDiagnosisPet"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:text="@string/appointment_details_txt"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/poppins_bold"
-        app:layout_constraintTop_toBottomOf="@id/inputAppointmentContactPhone"
+        app:layout_constraintTop_toBottomOf="@id/labelAppointmentHour"
         app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
         style="@style/h1" />
@@ -204,7 +167,7 @@
         style="@style/txtInputSecondary" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnDeleteStaff"
+        android:id="@+id/btnDeleteAppointment"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
         android:layout_marginTop="35dp"
@@ -217,7 +180,7 @@
         style="@style/secondaryButton" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSaveStaff"
+        android:id="@+id/btnSaveAppointment"
         android:layout_width="0dp"
         android:layout_height="@dimen/btnMainHeight"
         android:layout_marginTop="35dp"

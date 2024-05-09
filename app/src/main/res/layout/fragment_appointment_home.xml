@@ -17,7 +17,7 @@
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAddStaff"
+        android:id="@+id/btnAddAppointment"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/plus"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/historyAppointmentTitle" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/staff_members"
+        android:id="@+id/appointment_members"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
