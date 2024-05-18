@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageActivity">
+
+
+    <TextView
+        android:id="@+id/homeProfileTitle"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msgHomeProfileTitle"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/emailMsg"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/homeProfileTitle"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <TextView
+        android:id="@+id/labelCurrentUserEmail"
+        style="@style/h2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/labelEmail" />
+    <TextView
+        android:id="@+id/labelCurrentPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contraseña actual"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/labelCurrentUserEmail"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputCurrentPassword"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelCurrentPassword"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordMsg"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputCurrentPassword"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputPasswordUpdate"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelPassword"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+    <TextView
+        android:id="@+id/labelConfirmPasswordUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password_txt"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/inputPasswordUpdate"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        style="@style/h1" />
+
+    <EditText
+        android:id="@+id/inputConfirmPasswordUpdate"
+        android:layout_width="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_txt_example"
+        app:layout_constraintTop_toBottomOf="@id/labelConfirmPasswordUpdate"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        android:autofillHints=""
+        style="@style/txtInputSecondary" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="35dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/logout"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/secondaryButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btnMainHeight"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="15dp"
+        android:text="@string/btnSave"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/btnLogout"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        style="@style/primaryButton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

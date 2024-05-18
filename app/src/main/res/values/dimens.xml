@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Buttons Styles-->
+    <dimen name="btnCorners">100dp</dimen>
+    <dimen name="btnMainHeight">55dp</dimen>
+
+    <dimen name="smallButtonWidth">130dp</dimen>
+    <dimen name="smallButtonHeight">45dp</dimen>
+
+
+    <dimen name="mediumButtonWidth">200dp</dimen>
+
+    <!--Inputs Styles-->
+    <dimen name="editTextHeight">55dp</dimen>
+    <dimen name="inputBorders">10dp</dimen>
+
+    <dimen name="h4TextSize">35sp</dimen>
+    <dimen name="h2TextSize">16sp</dimen>
+    <dimen name="h3TextSize">22sp</dimen>
+
+
+</resources>

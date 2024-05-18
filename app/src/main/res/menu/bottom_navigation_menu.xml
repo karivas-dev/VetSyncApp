@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/patientFragment"
+        android:title="Pacientes"
+        android:icon="@drawable/baseline_emoji_nature" />
+
+    <item
+        android:id="@+id/appointmentFragment"
+        android:title="Citas"
+        android:icon="@drawable/baseline_edit_calendar" />
+
+    <item
+        android:id="@+id/staffFragment"
+        android:title="Staff"
+        android:icon="@drawable/baseline_groups_3" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Perfil"
+        android:icon="@drawable/baseline_face_3" />
+
+</menu>
